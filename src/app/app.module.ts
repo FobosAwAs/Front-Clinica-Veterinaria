@@ -8,17 +8,28 @@ import { AgregarEditarMascotaComponent } from './components/agregar-editar-masco
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Angular material
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import { HeaderComponent } from './components/header/header.component';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { NavComponent } from './components/nav/nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { ListClienteComponent } from './components/list-cliente/list-cliente.component';
+import { AgregarEditarClienteComponent } from './components/agregar-editar-cliente/agregar-editar-cliente.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule } from '@angular/common/http';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListMascotaComponent,
     AgregarEditarMascotaComponent,
-    HeaderComponent
+    NavComponent,
+    ListClienteComponent,
+    AgregarEditarClienteComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +37,14 @@ import {MatMenuModule} from '@angular/material/menu';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatMenuModule
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    LayoutModule,
+    MatCardModule,
+    MatTableModule,
+    HttpClientModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
