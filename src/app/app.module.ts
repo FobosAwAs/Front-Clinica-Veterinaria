@@ -17,10 +17,16 @@ import { NavComponent } from './components/nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ListClienteComponent } from './components/list-cliente/list-cliente.component';
 import { AgregarEditarClienteComponent } from './components/agregar-editar-cliente/agregar-editar-cliente.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatTableModule} from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +50,12 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatCardModule,
     MatTableModule,
     HttpClientModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
